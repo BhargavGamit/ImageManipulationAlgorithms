@@ -4,7 +4,7 @@
 # gray = green
 
 from PIL import Image
-i = Image.open("input1.png")
+i = Image.open("input.png")
 
 #pixel data is stored in pixels in form of two dimensional array
 pixels = i.load() 
