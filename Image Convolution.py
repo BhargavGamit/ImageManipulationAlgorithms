@@ -4,7 +4,7 @@
 
 
 from PIL import Image
-i = Image.open("input.jpg")
+i = Image.open("input.png")
 
 #store pixels of input image
 pixels = i.load()
@@ -141,8 +141,6 @@ filterOffset = (filterwidth-1)/2;
 
 offsety=filterOffset
 offsetx=filterOffset
-
-elements=[]
 
 j = Image.new(i.mode,(width+(2*offsetx),height+(2*offsety)))
 

@@ -12,10 +12,9 @@
 
 from PIL import Image
 i = Image.open("lena.jpg")
-#debugging purpose
-#print(i.format,i.size,i.mode)
+
 #pixel data is stored in pixels in form of two dimensional array
-pixels = i.load()# this is not a list, nor is it list()'able 
+pixels = i.load()
 width, height = i.size
 j=Image.new(i.mode,i.size)
 def Truncate(value):
