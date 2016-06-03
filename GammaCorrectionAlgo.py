@@ -10,8 +10,6 @@
 from PIL import Image
 import random
 i = Image.open("input.png")
-#debugging purpose
-#print(i.format,i.size,i.mode)
 #pixel data is stored in pixels in form of two dimensional array
 pixels = i.load() # this is not a list, nor is it list()'able
 width, height = i.size

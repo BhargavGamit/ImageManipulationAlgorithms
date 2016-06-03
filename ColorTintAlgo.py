@@ -17,9 +17,9 @@ print(i.format,i.size,i.mode)
 pixels = i.load() 
 width, height = i.size
 j=Image.new(i.mode,i.size)
-blueTint=input("enter the percentage of blue tint in fraction") 
-greenTint=input("enter the percentage of green tint in fraction")
-redTint=input("enter the percentage of red tint in fraction") 
+blueTint=input("Enter the percentage of blue tint in fraction:  ") 
+greenTint=input("Enter the percentage of green tint in fraction: ")
+redTint=input("Enter the percentage of red tint in fraction:   ") 
 for x in range(width):
     for y in range(height):
       cpixel = pixels[x, y]

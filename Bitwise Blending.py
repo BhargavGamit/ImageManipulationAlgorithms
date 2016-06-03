@@ -27,9 +27,9 @@ red=0
 print "Choose Bitwise blendtypes as follows"
 print "1 AND \n2 OR \n3 XOR\n"
 
-redblend=input("Choose red blend type")
-greenblend=input("Choose green blend type ")
-blueblend=input("Choose blue blend type ")
+redblend=input("Choose red blend type:   ")
+greenblend=input("Choose green blend type: ")
+blueblend=input("Choose blue blend type:  ")
 
 #cpixel[0] contains red value   cpixel[1] contains green value
 #cpixel[2] contains blue value  cpixel[3] contains alpha value

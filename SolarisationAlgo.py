@@ -17,7 +17,7 @@
 # Else
 #   solariseBlue = Blue(colour)
 # EndIf
-# PutPixelColour(x, y) = RGB(solariseRed, solariseGreen
+# PutPixelColour(x, y) = RGB(solariseRed, solariseGreen, solariseGreen)
 
 from PIL import Image
 i = Image.open("input.png")

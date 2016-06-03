@@ -3,7 +3,7 @@
 # Colour Shading algorithm
 from PIL import Image
 import random 
-i = Image.open("lena.jpg")
+i = Image.open("input.png")
 blueShade =  input("enter the ahdingfactor for blue range:0 to 1")
 redShade =  input("enter the ahdingfactor for red range:0 to 1")
 greenShade =  input("enter the ahdingfactor for green range:0 to 1")
@@ -27,4 +27,4 @@ for x in range(width):
       if(red < 0): 
            red = 0
       j.putpixel((x,y),(red,green,blue))
-j.save('shading.png')
+j.save('output.png')

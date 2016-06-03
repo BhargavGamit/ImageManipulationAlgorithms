@@ -11,14 +11,14 @@
 #         if (red > 255) {red = 255;}
 #         else if (red < 0) {red = 0;}
 from PIL import Image
-i = Image.open("lena.jpg")
-print(i.format,i.size,i.mode)
-pixels = i.load() # this is not a list, nor is it list()'able
+i = Image.open("input.png")
+
+pixels = i.load() 
 width, height = i.size
 j=Image.new(i.mode,i.size)
-blueLevelFloat=input("enter the color level for blue which is ranging from 0 to 255")
-greenLevelFloat=input("enter the color level for green which is ranging from 0 to 255")
-redLevelFloat=input("enter the color level for red which is ranging from 0 to 255")
+blueLevelFloat=input("Enter the color level for blue which is ranging from 0 to 255:  ")
+greenLevelFloat=input("Enter the color level for green which is ranging from 0 to 255: ")
+redLevelFloat=input("Enter the color level for red which is ranging from 0 to 255:   ")
 for x in range(width):
     for y in range(height):
       cpixel = pixels[x, y]
@@ -40,5 +40,5 @@ for x in range(width):
       elif(outputBlue<0):
           outputBlue=0
       j.putpixel((x,y),(outputRed,outputGreen,outputBlue))
-j.save('colourbal.png')
+j.save('output.png')
 

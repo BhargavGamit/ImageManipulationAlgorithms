@@ -1,6 +1,6 @@
 # Author Sri Vennela Vaishnapu
 # Email vennelavaishnapu2003@gmail.com
-# bi toning algorithm
+# Bitonal algorithm
 #if  (pixelBuffer[k] + pixelBuffer[k + 1] +  
 #             pixelBuffer[k + 2] <= threshold) 
 #        { 
@@ -15,13 +15,14 @@
 #            pixelBuffer[k + 2] = lightColor.R; 
 #        }
 from PIL import Image
-import random
-lightcolor_red=0
-lightcolor_blue=139
-lightcolor_green=0
-darkcolor_red=179
-darkcolor_blue=222
-darkcolor_green=196
+
+print "Enter values between 0 and 255"
+lightcolor_red=input("Enter red value of light color:   ")
+lightcolor_blue=input("Enter blue value of light color:  ")
+lightcolor_green=input("Enter green value of light color: ")
+darkcolor_red=input("Enter red value of dark color:    ")
+darkcolor_blue=input("Enter blue value of dark color:   ")
+darkcolor_green=input("Enter green value of dark color:  ")
 i = Image.open("input.png")
 #pixel data is stored in pixels in form of two dimensional array
 pixels = i.load() 

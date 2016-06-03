@@ -11,7 +11,7 @@
 #EndProcedure
 
 from PIL import Image
-i = Image.open("lena.jpg")
+i = Image.open("input.png")
 
 #pixel data is stored in pixels in form of two dimensional array
 pixels = i.load()
@@ -41,4 +41,4 @@ for x in range(width-1):
       j.putpixel((x+1, y  ),(int(Truncate(apixel[0] + 0.5 * error_red)),int(Truncate(apixel[1]+0.5*error_blue)),int(Truncate(apixel[2]+0.5*error_green))))
       j.putpixel((x  , y+1),(int(Truncate(bpixel[0] + 0.5 * error_red)),int(Truncate(bpixel[1]+0.5*error_blue)),int(Truncate(bpixel[2]+0.5*error_green))))
 
-j.save('error.png')
+j.save('output.png')
