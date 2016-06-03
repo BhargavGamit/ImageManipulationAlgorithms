@@ -11,10 +11,10 @@ from PIL import Image
 import random
 i = Image.open("input.png")
 #pixel data is stored in pixels in form of two dimensional array
-pixels = i.load() # this is not a list, nor is it list()'able
+pixels = i.load() 
 width, height = i.size
 j=Image.new(i.mode,i.size)
-gamma=input("enter the value of gamma range:0.25  to 2.0")
+gamma=input("Enter the value of gamma range:0.25 to 2.0: ")
 for x in range(width):
     for y in range(height):
       cpixel = pixels[x, y]
