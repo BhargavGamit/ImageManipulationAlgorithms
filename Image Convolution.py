@@ -154,14 +154,14 @@ for x in range(width+(2*offsetx)):
             j.putpixel((x,y),(0,0,0))
         if(y>=height):
             j.putpixel((x,y),(0,0,0))
-        if(x>=offsetx and y>=offsety and x < width and y <height):
+        if(x>=offsetx and y>=offsety and x <=width and y <=height):
             cpixel=pixels[x-offsetx,y-offsety]
             j.putpixel((x,y),cpixel)
 
 
 for y in range(height+(2*offsety)):
     for x in range(width+(2*offsetx)):
-        if(x>=offsetx and y>=offsety and x < width and y <height):
+        if(x>=offsetx and y>=offsety and x <=width and y <=height):
             blue=0.0
             green=0.0
             red=0.0
