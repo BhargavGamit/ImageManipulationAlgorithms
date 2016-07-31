@@ -165,8 +165,8 @@ for y in range(height+(2*offsety)):
             blue=0.0
             green=0.0
             red=0.0
-            filterx=x-offsetx
-            filtery=y-offsety
+            #filterx=x-offsetx
+            #filtery=y-offsety
             for fy in range(filterheight):
                 for fx in range(filterwidth):
                     cpixel=j.getpixel((x-offsety+fx,y-offsety+fy))

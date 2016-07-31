@@ -23,14 +23,14 @@ from PIL import Image
 i = Image.open("input.png")
 
 #pixel data is stored in pixels in form of two dimensional array
-pixels = i.load() 
+pixels = i.load()
 width, height = i.size
 j=Image.new(i.mode,i.size)
 
-threshold=128    
+threshold=128
 for x in range(width):
     for y in range(height):
-      cpixel = pixels[x, y] 
+      cpixel = pixels[x, y]
       #cpixel[0] contains red value   cpixel[1] contains green value
       #cpixel[2] contains blue value  cpixel[3] contains alpha value
       if(cpixel[0]<threshold):

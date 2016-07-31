@@ -66,8 +66,8 @@ for y in range(height+(2*offsety)):
             blue=morphresetvalue
             green=morphresetvalue
             red=morphresetvalue
-            filterx=x-offsetx
-            filtery=y-offsety
+            #filterx=x-offsetx
+            #filtery=y-offsety
             if(morphtype==1):
                 for fy in range(filterheight):
                     for fx in range(filterwidth):
