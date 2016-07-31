@@ -62,7 +62,7 @@ for x in range(width+(2*offsetx)):
 
 for y in range(height+(2*offsety)):
     for x in range(width+(2*offsetx)):
-        if(x>=offsetx and y>=offsety and x < =width and y <=height):
+        if(x>=offsetx and y>=offsety and x <=width and y <=height):
             blue=morphresetvalue
             green=morphresetvalue
             red=morphresetvalue

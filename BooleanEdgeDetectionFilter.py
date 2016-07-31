@@ -63,13 +63,13 @@ for x in range(width+(2*offsetx)):
             j.putpixel((x,y),(0,0,0))
         if(y>=height):
             j.putpixel((x,y),(0,0,0))
-        if(x>=offsetx and y>=offsety and x < =width and y <=height):
+        if(x>=offsetx and y>=offsety and x <=width and y <=height):
             cpixel=pixels[x-offsetx,y-offsety]
             j.putpixel((x,y),cpixel)
 
 for y in range(height+(2*offsety)):
     for x in range(width+(2*offsetx)):
-        if(x>=offsetx+1 and y>=offsety+1 and x < =width and y <=height):
+        if(x>=offsetx+1 and y>=offsety+1 and x <=width and y <=height):
             matrixmean=0
             matrixtotal=0
             matrixvariance=0.0
