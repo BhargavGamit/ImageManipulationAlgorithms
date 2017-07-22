@@ -1,4 +1,4 @@
-#Authors Bhargav K,SriVennelaVaishnapu 
+#Authors Bhargav K,SriVennelaVaishnapu
 #Email vennelavaishnapu2003@gmail.com
 #Error Diffusion Algorithm
 #error = actualColour - nearestColour
